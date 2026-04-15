@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlantX Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .glass { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px); }
+        .glass-dark { background: rgba(0, 0, 0, 0.2); backdrop-filter: blur(8px); }
+    </style>
+</head>
+<body class="bg-[#e9ecef] min-h-screen p-4 md:p-8">
+
+    <main class="max-w-7xl mx-auto bg-white rounded-[2rem] shadow-2xl overflow-hidden border-[12px] border-[#4e6b3b]">
+        
+        <header class="flex flex-wrap items-center justify-between px-8 py-6">
+            <div class="flex items-center gap-12">
+                <h1 class="text-2xl font-bold text-[#84cc16] tracking-tight">PLANTX</h1>
+                <nav class="hidden md:flex gap-8 text-gray-500 font-medium">
+                    <a href="#" class="hover:text-black transition-colors">My Plants</a>
+                    <a href="#" class="hover:text-black transition-colors">Analytics</a>
+                    <a href="#" class="hover:text-black transition-colors">Settings</a>
+                </nav>
+            </div>
+            
+            <div class="flex items-center gap-4">
+                <div class="relative">
+                    <input type="text" placeholder="Search.." class="bg-gray-100 rounded-full py-2 px-6 pl-10 text-sm focus:outline-none focus:ring-2 focus:ring-lime-400">
+                    <span class="absolute left-4 top-2.5 text-gray-400">🔍</span>
+                </div>
+                <button class="bg-[#a3e635] hover:bg-[#84cc16] text-white font-semibold py-2 px-6 rounded-full transition-all shadow-md active:scale-95">
+                    Upgrade
+                </button>
+                <div class="w-10 h-10 rounded-full bg-gray-200 overflow-hidden border border-gray-300">
+                    <img src="https://i.pravatar.cc/150?u=4" alt="User" />
+                </div>
+            </div>
+        </header>
+
+        <section class="relative mx-6 h-[450px] rounded-[2rem] overflow-hidden shadow-inner">
+            <img src="https://images.unsplash.com/photo-1530836361253-efad5c6ff9ad?q=80&w=2070" class="absolute inset-0 w-full h-full object-cover" alt="Green sprouts">
+            
+            <div class="absolute top-6 left-6 flex gap-4">
+                <div class="glass p-4 rounded-2xl w-40">
+                    <p class="text-[10px] font-bold text-gray-800 uppercase">Current Conditions</p>
+                    <h2 class="text-3xl font-bold mt-1">24°C</h2>
+                    <p class="text-xs text-gray-600 mt-1">Sunny • H:46% • L:52%</p>
+                </div>
+                <div class="glass p-4 rounded-2xl w-24 flex flex-col items-center justify-center text-center">
+                    <h2 class="text-2xl font-bold">65%</h2>
+                    <p class="text-[10px] font-medium text-gray-600 uppercase">Soil Moisture</p>
+                </div>
+                <div class="glass p-4 rounded-2xl w-24 flex flex-col items-center justify-center text-center">
+                    <h2 class="text-2xl font-bold">2 m/s</h2>
+                    <p class="text-[10px] font-medium text-gray-600 uppercase">Wind Speed</p>
+                </div>
+            </div>
+
+            <div class="absolute bottom-6 left-6 right-6 glass-dark rounded-3xl p-6 text-white flex justify-between items-end">
+                <div>
+                    <p class="text-xs opacity-80">Golden Harvest</p>
+                    <h3 class="text-3xl font-bold">Sector PL-02J</h3>
+                    <p class="text-xs opacity-70 mt-1">Area: 200 m² • Soil Type: Nitrogen-Content</p>
+                </div>
+                <div class="flex gap-12 text-right">
+                    <div>
+                        <p class="text-[10px] uppercase opacity-70">pH Level</p>
+                        <p class="text-xl font-bold">7.6</p>
+                    </div>
+                    <div>
+                        <p class="text-[10px] uppercase opacity-70">Phosphorus</p>
+                        <p class="text-xl font-bold uppercase">High</p>
+                    </div>
+                    <div>
+                        <p class="text-[10px] uppercase opacity-70">Potassium</p>
+                        <p class="text-xl font-bold uppercase">Adequate</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="p-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+            
+            <div class="bg-white border border-gray-100 rounded-[2rem] p-6 shadow-sm">
+                <div class="flex justify-between items-start mb-4">
+                    <div>
+                        <h4 class="font-bold text-gray-800">Soil Intelligence</h4>
+                        <p class="text-xs text-gray-400">Optimal N-level maintenance</p>
+                    </div>
+                    <span class="text-lime-500 bg-lime-50 p-1 rounded-lg">📈</span>
+                </div>
+                <div class="h-32 bg-gradient-to-t from-lime-100 to-white rounded-xl relative overflow-hidden">
+                    <svg viewBox="0 0 100 40" class="absolute bottom-0 w-full h-full text-lime-400 fill-current opacity-50">
+                        <path d="M0 40 L0 30 Q 25 20, 50 25 T 100 10 L 100 40 Z" />
+                    </svg>
+                </div>
+                <div class="flex justify-between mt-4">
+                    <div><p class="text-[10px] text-gray-400 uppercase">pH Level</p><p class="font-bold">7.6</p></div>
+                    <div><p class="text-[10px] text-gray-400 uppercase">N-Level</p><p class="font-bold">98%</p></div>
+                    <div><p class="text-[10px] text-gray-400 uppercase">Moisture</p><p class="font-bold">65%</p></div>
+                </div>
+            </div>
+
+            <div class="bg-white border border-gray-100 rounded-[2rem] p-6 shadow-sm">
+                <div class="flex justify-between mb-4">
+                    <h4 class="font-bold text-gray-800">ClimateIQ</h4>
+                    <span class="text-xs font-bold text-gray-500">Avg. Temp <span class="text-black">19°C</span></span>
+                </div>
+                <div class="flex items-end justify-between h-24 gap-1 px-2">
+                    <div class="w-1 bg-gray-100 h-12 rounded-full"></div>
+                    <div class="w-1 bg-gray-100 h-16 rounded-full"></div>
+                    <div class="w-1 bg-gray-100 h-14 rounded-full"></div>
+                    <div class="w-1 bg-lime-400 h-20 rounded-full shadow-[0_0_10px_rgba(163,230,53,0.5)]"></div>
+                </div>
+                <div class="grid grid-cols-3 gap-2 mt-6">
+                    <div class="text-center bg-gray-50 p-2 rounded-xl">
+                        <p class="text-[8px] text-gray-400">25% Hood</p>
+                        <p class="text-[10px] font-bold">Good</p>
+                    </div>
+                    <div class="text-center bg-lime-100 p-2 rounded-xl ring-1 ring-lime-300">
+                        <p class="text-[8px] text-gray-400">Up to 40%</p>
+                        <p class="text-[10px] font-bold">Optimal</p>
+                    </div>
+                    <div class="text-center bg-gray-50 p-2 rounded-xl">
+                        <p class="text-[8px] text-gray-400">30% Reduced</p>
+                        <p class="text-[10px] font-bold">Warning</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white border border-gray-100 rounded-[2rem] p-6 shadow-sm">
+                <div class="flex justify-between items-center mb-4">
+                    <h4 class="font-bold text-gray-800 flex items-center gap-2">📷 Camera 1</h4>
+                    <span class="text-[10px] font-bold text-lime-500 flex items-center gap-1">
+                        <span class="w-2 h-2 bg-lime-500 rounded-full animate-pulse"></span> LIVE
+                    </span>
+                </div>
+                <div class="rounded-2xl overflow-hidden mb-4 h-32">
+                    <img src="https://images.unsplash.com/photo-1453904300235-0f2f60b15b5d?q=80&w=1972" class="w-full h-full object-cover" alt="Crop View">
+                </div>
+                <div class="text-xs space-y-1">
+                    <div class="flex justify-between"><span class="text-gray-400">Resolution</span><span class="font-semibold">1920x1080</span></div>
+                    <div class="flex justify-between"><span class="text-gray-400">Location</span><span class="font-semibold text-gray-600">Sector PL-02J</span></div>
+                    <div class="flex justify-between"><span class="text-gray-400">Status</span><span class="text-lime-600 font-bold">Recording</span></div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+</body>
+</html>
