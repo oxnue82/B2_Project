@@ -1,4 +1,4 @@
-# 🌿 Agricare - AI-Powered Crop Disease Detection System
+# Smart Agricultural Crop Disease Detection 
 
 # Authors
   -  K. RaviTeja (Y22ACS479)
