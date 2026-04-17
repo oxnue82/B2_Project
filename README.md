@@ -6,7 +6,7 @@
   -  J. Meena (Y22ACS466)
   -  G. RamTeja (L22ACS599)
 
-Agricare is a full-stack web application that uses deep learning to detect diseases in crop leaves and recommend suitable treatments. Users can upload images of crop leaves and receive real-time predictions along with product recommendations.
+Smart Agricultural Crop Disease Detection is a web application that uses deep learning to detect diseases in crop leaves and recommend suitable treatments. Users can upload images of crop leaves and receive real-time predictions along with product recommendations.
 
 ---
 
